@@ -8,7 +8,7 @@ from datetime import datetime
 default_hostname = '127.0.0.1'
 default_port = 7497
 default_client_id = 10645 # can set and use your Master Client ID
-timeout_sec = 5
+timeout_sec = 10
 
 def fetch_managed_accounts(hostname=default_hostname, port=default_port,
                            client_id=default_client_id):
@@ -83,8 +83,8 @@ def fetch_current_time(hostname=default_hostname,
     return app.current_time
 
 
-def fetch_historical_data(contract, endDateTime='', durationStr='30 D',
-                          barSizeSetting='1 hour', whatToShow='MIDPOINT',
+def fetch_historical_data(contract, endDateTime='', durationStr='5 Y',
+                          barSizeSetting='1 day', whatToShow='MIDPOINT',
                           useRTH=True, hostname=default_hostname,
                           port=default_port, client_id=default_client_id):
     app = ibkr_app()

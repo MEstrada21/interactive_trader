@@ -16,6 +16,10 @@ from ibapi.order import Order
 import time
 import threading
 import pandas as pd
+import finta as ta
+import numpy as np
+import scipy as sp
+
 
 CONTENT_STYLE = {
     "transition": "margin-left .5s",
@@ -248,6 +252,8 @@ def place_order(n_clicks, contract_symbol, contract_sec_type,
     )
 
     return ''
+
+
 
 if __name__ == "__main__":
     app.run_server()

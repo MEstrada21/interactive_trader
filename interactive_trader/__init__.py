@@ -5,3 +5,4 @@ from interactive_trader.synchronous_functions import fetch_current_time
 from interactive_trader.synchronous_functions import fetch_matching_symbols
 from interactive_trader.synchronous_functions import place_order
 from interactive_trader.ibkr_app import ibkr_app
+
